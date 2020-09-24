@@ -4,7 +4,7 @@ import (
 	"time"
 
 	"github.com/jinzhu/gorm"
-	"github.com/tminerio/tminer/tminer-profit/config"
+	"github.com/freshcyber/fc-collage-check/config"
 )
 
 // GMariadb GMariadb
