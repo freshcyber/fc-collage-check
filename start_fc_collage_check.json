@@ -1,0 +1,15 @@
+{
+    "apps": [{
+        "name": "fc-collage-check",
+        "cwd": "./",
+        "script": "start_fc_collage_check.sh",
+        "exec_interpreter": "bash",
+        "min_uptime": "60s",
+        "max_restarts": 30,
+        "exec_mode": "fork",
+        "error_file": "./tmp/fc-collage-check-err.log",
+        "out_file": "./tmp/fc-collage-check-out.log",
+        "pid_file": "./tmp/fc-collage-check.pid",
+        "watch": false
+    }]
+}

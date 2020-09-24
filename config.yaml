@@ -1,0 +1,33 @@
+###############################################################################
+#
+#    server Config section
+#
+###############################################################################
+server:
+  host: "#"
+  exec: true
+  decimal: 1000000
+  limit: 50  
+  spec: "*/5 * * * * ?" #每天5秒执行一次游戏收益 
+  # spec: "0 0 1 * * ?" #每天凌晨1点执行一次结算
+  urlgo: "https://ymdx.ruimofang.com"
+  api:
+    appendkey: "VeZ16GuXyKaYhKbA?"  # api append key rand
+    md5key: "api_token"
+    
+database:
+  dialect: mysql
+  database: np
+  # database: bookmarker
+  user: freshcyberbj
+  password: freshcyberbj!
+  # 要支持emoji的话，填 utf8mb4
+  charset: utf8mb4
+  # 数据库ip 
+  host: bj-cdb-mgy1dqco.sql.tencentcdb.com
+  # 数据库端口
+  port: 61653
+  # 空闲时最大的连接数
+  maxIdleConns: 20
+  # 最大的连接数
+  maxOpenConns: 50
