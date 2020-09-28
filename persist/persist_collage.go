@@ -18,7 +18,7 @@ func (maria *Mariadb) GetCollageOrderList(time string) ([]public.NpCollageOrders
 // GetCollageOrder 当前同一拼单
 func (maria *Mariadb) GetCollageOrder(collage_no string) ([]public.NpCollageOrders, error) {
 	var _obj []public.NpCollageOrders
-	err := maria.db.Table("np_collage_orders").Where("status > 0 and collage_no > ?",collage_no).Find(&_obj).Error
+	err := maria.db.Table("np_collage_orders").Where("status > 0 and collage_no = ?",collage_no).Find(&_obj).Error
 	if err != nil {
 		return _obj, err
 	}
